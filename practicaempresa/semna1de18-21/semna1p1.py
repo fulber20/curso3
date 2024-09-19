@@ -21,7 +21,7 @@ model = LinearRegression()
 model.fit(x_train, y_train)
 
 # realizar predecciones
-y-pred = model.predict(x_test)
+y_pred = model.predict(x_test)
 
 #diagnosticar el modelo
 mse = mean_squared_error(y_test, y_pred)
