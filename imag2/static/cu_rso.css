@@ -1,0 +1,176 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0d0d0e;
+            color: #fff;
+            padding: 15px 20px;
+            position: relative;
+            height: 90px;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .header-logo {
+            height: 50px;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            text-align: right;
+            flex-grow: 1;
+            position: relative;
+            top: -50px;
+            right: 20;
+        }
+   
+        .floating-menu {
+            position: fixed;
+            top: 90px;
+            left: 0;
+            width: 250px;
+            background-color: #2e2e2f;
+            border-radius: 0 ;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 15px;
+            z-index: 1000;
+            height:610px;
+        }
+        .floating-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .floating-menu li {
+            margin-bottom: 10px;
+        }
+        .floating-menu a {
+            text-decoration: none;
+            color: #edf0f3;
+            font-weight: bold;
+        }
+        .floating-menu a:hover {
+            color: #0056b3;
+        }
+        .accordion-container {
+            margin-left: 220px; /* Espacio para el menú */
+            padding: 20px;
+        }
+        .accordion-button {
+            background-color: #007bff;
+            color: white;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #0056b3;
+            color: white;
+        }
+        .accordion-body {
+            background-color: #e9ecef;
+        }
+        .accordion-item {
+            border: none;
+            margin-bottom: 10px;
+            width: 800px;
+            position: relative;
+            top: 10px;
+            right: 250px;
+        }
+        .video-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .video-link:hover {
+            color: #0056b3;
+        }
+        .video-container {
+            margin-top: 10px;
+        }
+        .content-container {
+            display: flex; /* Permite alinear elementos en una fila */
+            align-items: center; /* Centra verticalmente los elementos */
+            justify-content: space-between; /* Espacio entre los elementos */
+        }
+        
+        .video-container {
+            flex: 1; /* Ocupa el espacio disponible */
+        }
+        
+        .accordion-image {
+            width: 100px; /* Ajusta el tamaño según sea necesario */
+            height: auto;
+            position: relative; 
+            top: 5px;/* Mantiene la proporción de la imagen */
+            left: 600px; /* Espacio entre el enlace y la imagen */
+        }
+       
+        
+        .floating-menu ul {
+            list-style: none; /* Elimina viñetas */
+            padding: 0;
+            margin: 0;
+        }
+       
+        
+        .floating-menu a {
+            display: flex; /* Flex para alinear icono y texto */
+            align-items: center; /* Centra verticalmente */
+            padding:40px; /* Espaciado interno */
+            color: #fff; /* Color del texto */
+            text-decoration: none; /* Sin subrayado */
+            transition: background 0.3s;
+            border-radius: 30px; /* Efecto suave en el fondo */
+        }
+        
+        .floating-menu a:hover {
+            background-color: #888; 
+            border-radius: 30px;/* Color de fondo al pasar el ratón */
+        }
+        
+        .floating-menu i {
+            margin-right: 10px; /* Espaciado entre el icono y el texto */
+            font-size: 1.5rem; 
+            
+        }
+       .conter{
+        border: #f0cc3b solid 3px;
+        border-radius: 40px;
+        height: 350px;
+        position: relative;
+        right: 10px;
+        top: 10px;
+        background-color: #007bff;
+       }
+       .course-conter{
+        transform: rotate3d(90px);
+       }
+       .window-block {
+        position: fixed; /* Fija en la pantalla */
+        top: 90px; /* Distancia del top de la ventana */
+        left: 250px; /* Desplazada a la derecha del menú */
+        width: 1210px; /* Ancho de la ventana */
+        height: 1000px; /* Altura de la ventana */
+        background-color: white; /* Color de fondo */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra */
+        padding: 20px; /* Espaciado interno */
+        z-index: 1000; /* Para asegurarse de que esté encima */
+        border-radius: 8px; /* Bordes redondeados */
+        overflow-y: auto; /* Permitir scroll interno */
+    }
+   

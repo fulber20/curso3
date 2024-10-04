@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo más claro y limpio */
+    color: #333; /* Color de texto oscuro para mejor legibilidad */
+}
+
+.container {
+    width: 65%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el contenedor principal */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 150px;
+    top: 50px;/*Necesario para el posicionamiento relativo del botón de envío */
+}
+
+header {
+    background-color: #050565;
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-logo {
+    max-height: 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center; /* Centra el texto del encabezado */
+}
+
+#chat {
+    background: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#messageInput {
+    width: calc(100% - 100px); /* Ajuste para mejor alineación con el botón */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre el campo de texto y el botón */
+}
+
+#sendMessage {
+    width: 100px;
+    padding: 15px;
+    background: #1d0b7b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+#sendMessage:hover {
+    background: #3a0d9e;
+}
+
+.floating-menu {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    height: 100%;
+    width: 250px;
+    background-color: #1d0b7b;
+    color: white;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.floating-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina márgenes predeterminados para una mejor alineación */
+}
+
+.floating-menu ul li {
+    margin: 1.5rem 0;
+}
+
+.floating-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.floating-menu ul li a i {
+    margin-right: 0.7rem;
+}
+
+.floating-menu ul li a:hover {
+    color: #d3d3d3;
+}

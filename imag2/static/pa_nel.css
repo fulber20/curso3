@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+header {
+    background-color: #0d0d0e;
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+#user-name {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #f2f1f1;
+    padding: 10px;
+    transition: color 0.3s;
+    
+}
+
+#user-name:hover {
+    color: #007BFF;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-family:fantasy;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #0d32ea, #d4e608);
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    transition: transform 0.3s;
+   position: relative;
+right: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.course-title {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(209, 208, 212);
+    transition: color 0.3s;
+    
+}
+
+.course-title:hover {
+    color: #ffdd57;
+}
+
+.status {
+    color: #f1f1f1;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background-color: #ffdd57;
+    height: 100%;
+    text-align: center;
+    color: #333;
+    transition: width 0.4s ease;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+.nav-2 {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(73, 73, 73, 0.3);
+}
+
+.nav-2 ul {
+    list-style: none; /* Elimina viñetas */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-2 a {
+    text-decoration: none;
+    color: #edf0f3;
+    font-weight: bold;
+}
+.nav-2 a:hover {
+    color: #0056b3;
+}
+
+.nav-2 a {
+    display: flex; /* Flex para alinear icono y texto */
+    align-items: center; /* Centra verticalmente */
+    padding: 37px; /* Espaciado interno */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background 0.3s; /* Efecto suave en el fondo */
+    border-radius: 30px;
+}
+
+.nav-2 a:hover {
+    background-color: #888;
+    border-radius: 30px; /* Color de fondo al pasar el ratón */
+}
+
+.nav-2 i {
+    margin-right: 10px; /* Espaciado entre el icono y el texto */
+    font-size: 1.5rem; /* Tamaño del icono */
+}
+.window-block {
+    position: fixed; /* Fija en la pantalla */
+    top: 80px; /* Distancia del top de la ventana */
+    left: 250px; /* Desplazada a la derecha del menú */
+    width: 1210px; /* Ancho de la ventana */
+    height: 1000px; /* Altura de la ventana */
+    background-color: white; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra */
+    padding: 20px; /* Espaciado interno */
+    z-index: 1000; 
+    border-radius: 8px; 
+    overflow-y: auto; 
+}
