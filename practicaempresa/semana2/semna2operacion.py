@@ -1,5 +1,5 @@
 import numpy as np 
-v1=[2,4.6]
+v1=[2,4,6]
 v2=np.ones(3)
 array=([1.,1.,1.])
 v3=np.array([1,3,5])

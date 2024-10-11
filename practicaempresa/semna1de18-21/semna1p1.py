@@ -11,18 +11,17 @@ data ={
 }
 df = pd.DataFrame(data)
 
-#dividir los datos
+
 x= df[['tamaño']]
 y=df['precio']
 x_train, x_test, y_train, y_test = train_test_split(x ,y, test_size=0.2, random_state=42)
 
-# entrenar el model
 model = LinearRegression()
 model.fit(x_train, y_train)
 
-# realizar predecciones
+
 y_pred = model.predict(x_test)
 
-#diagnosticar el modelo
+
 mse = mean_squared_error(y_test, y_pred)
 print(f'MSE:{mse}')

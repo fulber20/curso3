@@ -12,5 +12,5 @@ labels=KMeans.labels_
 
 #vizualizacion
 plt.scatter(x[:, 0], x[:, 1], c=labels, cmap='viridis')
-plt.title('k-Means clustering')
+plt.title('ventas ')
 plt.show()
