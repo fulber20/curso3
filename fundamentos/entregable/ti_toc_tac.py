@@ -7,7 +7,14 @@ class juegoTicTacToe:
         self.master=("Tic Tac Toe")
         self.reset_game()
         
-if__name__=="__main__":
+    def reset_game(selft):
+        self.board = [[" " for _ in range(3)] for _ in range(3)]
+        self.buttons = [[None for _ in range(3)] for _ in range(3)]
+        self.create_buttons()
+        self.player = "X"
+        
+if __name__ == "__main__":
     root = tk.Tk()
-    game =  juegoTicTacToe(root)
+    game = juegoTicTacToe(root)
     root.mainloop()
+
