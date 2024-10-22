@@ -16,12 +16,12 @@ class JuegoTicTacToe:
         self.game_over = False
 
     def create_buttons(self):
-        for row in range(3):
-            for col in range(3):
-                button = tk.Button(self.master, text=" ", font=('Arial', 60), width=5, height=2,
-                                   command=lambda r=row, c=col: self.player_move(r, c))
-                button.grid(row=row, column=col)
-                self.buttons[row][col] = button
+      for row in range(3):
+        for col in range(3):
+            button = tk.Button(self.master, text=" ", font=('Arial', 40), width=5, height=2,
+                               command=lambda r=row, c=col: self.player_move(r, c))
+            button.grid(row=row, column=col, sticky="nsew")  # Asegura que los botones se expandan
+            self.buttons[row][col] = button
 
     def player_move(self, row, col):
         if self.board[row][col] == " " and not self.game_over:
