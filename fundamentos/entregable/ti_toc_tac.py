@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 import random
 
 class JuegoTicTacToe:
@@ -66,8 +67,9 @@ class JuegoTicTacToe:
         for row in range(3):
             for col in range(3):
                 self.buttons[row][col].config(state="disabled")
-        result_label = tk.Label(self.master, text=message, font=('Arial', 20))
-        result_label.grid(row=3, column=0, columnspan=3)
+        response = messagebox.askyesno("Juego Terminado", message + "\n¿Quieres reiniciar el juego?")
+        if response:
+            self.reset_game()
 
 if __name__ == "__main__":
     root = tk.Tk()
