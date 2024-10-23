@@ -19,3 +19,4 @@ print(f"Mediana: {mediana_ventas:.2f}")
 print(f"Rango: {rango_ventas}")
 print(f"Varianza: {varianza_ventas:.2f}")
 print(f"Desviación Estándar: {desviacion_estandar_ventas:.2f}")
+

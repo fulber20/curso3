@@ -20,7 +20,7 @@ class JuegoTicTacToe:
         for col in range(3):
             button = tk.Button(self.master, text=" ", font=('Arial', 40), width=5, height=2,
                                command=lambda r=row, c=col: self.player_move(r, c))
-            button.grid(row=row, column=col, sticky="nsew")  # Asegura que los botones se expandan
+            button.grid(row=row, column=col, sticky="nsew")  
             self.buttons[row][col] = button
 
     def player_move(self, row, col):
@@ -28,7 +28,7 @@ class JuegoTicTacToe:
             self.board[row][col] = self.player
             self.buttons[row][col].config(text=self.player)
             if self.check_winner(self.player):
-                self.end_game(f"Jugador {self.player} gana!")
+                self.end_game(f" Jugador {self.player} gana!")
             elif self.is_draw():
                 self.end_game("Es un empate!")
             else:
@@ -42,7 +42,7 @@ class JuegoTicTacToe:
             self.board[row][col] = self.player
             self.buttons[row][col].config(text=self.player)
             if self.check_winner(self.player):
-                self.end_game(f"Jugador {self.player} gana!")
+                self.end_game(f"Perdites, Jugador {self.player} gana!")
             elif self.is_draw():
                 self.end_game("Es un empate!")
             else:
